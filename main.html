@@ -2,6 +2,13 @@
 	<head>
 		<title>Verse of the day!</title>
 		<style>
+			@font-face {
+				font-family: 'museo500';
+				src: url('Museo500-Regular-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+
 			body {
 				margin: 0;
 			}
@@ -15,6 +22,7 @@
 				padding: 20px 20px;
 				max-width: 1140;
 				margin: 0 auto;
+				overflow: hidden;
 			}
 
 			.header img {
@@ -24,18 +32,25 @@
 			}
 
 			.header h1 {
-				display: inline-block;
-				line-height: 50px;
-				font-size: 25px;
-				margin: 0 0 0 50px;
+				float: left;
+				font: 35px 'museo500';
+				line-height: 62px;
+				margin: 0 0 0 10px;
 				padding: 0;
+			}
+
+			.logo {
+				background-image: url('http://blog.biblia.com/wp-content/themes/blog.biblia.com/images/logo.png');
+				float: left;
+				height: 62px;
+				width: 45px;
 			}
 
 			#verse-of-the-day-image {
 				display: block;
 				margin: 0 auto;
 				max-width: 800px;
-				padding: 20px;
+				padding: 40px 20px 20px;
 				width: calc(100% - 40px);
 			}
 
@@ -52,7 +67,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="header">
-				<img src="http://biblia.com/public/images/logo-404.png" />
+				<div class="logo"></div>
 				<h1>Verse of the Day</h1>
 			</div>
 		</div>
