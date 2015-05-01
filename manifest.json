@@ -1,6 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Bible Verse of the Day",
+  "icons": {
+    "128": "faithlife.png"
+  },
   "version": "0.1",
   "description": "Open a new verse of the day artwork every day.",
   "chrome_url_overrides" : {
