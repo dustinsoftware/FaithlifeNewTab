@@ -4,7 +4,7 @@
   "icons": {
     "128": "faithlife.png"
   },
-  "version": "0.1",
+  "version": "1.0",
   "description": "Open a new verse of the day artwork every day.",
   "chrome_url_overrides" : {
     "newtab": "main.html"
