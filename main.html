@@ -12,7 +12,7 @@
 			}
 
 			.header {
-				padding: 20px 0;
+				padding: 20px 20px;
 				max-width: 1140;
 				margin: 0 auto;
 			}
@@ -32,9 +32,11 @@
 			}
 
 			#verse-of-the-day-image {
-				height: 450px;
-				margin: 20px auto;
-				width: 800px;
+				display: block;
+				margin: 0 auto;
+				max-width: 800px;
+				padding: 20px;
+				width: calc(100% - 40px);
 			}
 
 			#share-links {
@@ -54,7 +56,7 @@
 				<h1>Verse of the Day</h1>
 			</div>
 		</div>
-		<div id="verse-of-the-day-image"></div>
+		<img id="verse-of-the-day-image" />
 		<div id="share-links">
 			<p>Share today's image with your friends!</p>
 			<a href="https://faithlife.com/share?url=https://bible.faithlife.com/verseoftheday/lightbox"><img src="faithlife.png" class="share-image" /></a>

@@ -9,4 +9,4 @@ function pad(number) {
 var today = new Date();
 var todayDate = today.getUTCFullYear() + '-' + pad( today.getUTCMonth() + 1 ) + '-' + pad( today.getUTCDate() );
 
-document.getElementById('verse-of-the-day-image').style.backgroundImage = "url('https://biblia.com/verseoftheday/image/" + todayDate + "?width=800')";
+document.getElementById('verse-of-the-day-image').src = "https://biblia.com/verseoftheday/image/" + todayDate + "?width=800";
