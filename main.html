@@ -1,25 +1,67 @@
 <html>
 	<head>
 		<title>Verse of the day!</title>
+		<style>
+			body {
+				margin: 0;
+			}
+
+			.wrapper {
+				background: url('http://blog.biblia.com/wp-content/themes/blog.biblia.com/images/header.png') no-repeat center top #FC9909;
+				color: white;
+			}
+
+			.header {
+				padding: 20px 0;
+				max-width: 1140;
+				margin: 0 auto;
+			}
+
+			.header img {
+				display: block;
+				height: 50px;
+				position: absolute;
+			}
+
+			.header h1 {
+				display: inline-block;
+				line-height: 50px;
+				font-size: 25px;
+				margin: 0 0 0 50px;
+				padding: 0;
+			}
+
+			#verse-of-the-day-image {
+				height: 450px;
+				margin: 20px auto;
+				width: 800px;
+			}
+
+			#share-links {
+				text-align: center;
+			}
+			.share-image {
+				max-width: 40px;
+			}
+		</style>
 	</head>
 	<style type="text/css">
-		#share-links {
-			text-align: center;
-		}
-		.share-image {
-			max-width: 40px;
-		}
 	</style>
 	<body>
-		<p style="text-align:center;">
-			<img src="http://biblia.com/verseoftheday/fullsize.jpg" style="max-width: 900px" />
-			<div class="fb-share-button" data-href="http://biblia.com/verseoftheday" data-layout="button_count"></div>
-		</p>
+		<div class="wrapper">
+			<div class="header">
+				<img src="http://biblia.com/public/images/logo-404.png" />
+				<h1>Verse of the Day</h1>
+			</div>
+		</div>
+		<div id="verse-of-the-day-image"></div>
 		<div id="share-links">
 			<p>Share today's image with your friends!</p>
 			<a href="https://faithlife.com/share?url=http://biblia.com/verseoftheday"><img src="faithlife.png" class="share-image" /></a>
 			<a href="https://facebook.com/share?url=http://biblia.com/verseoftheday"><img src="fb.png" class="share-image"/></a>
 			<a href="https://twitter.com/share?url=http://biblia.com/verseoftheday"><img src="twitter.png" class="share-image"/></a>
 		</div>
+		</p>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
