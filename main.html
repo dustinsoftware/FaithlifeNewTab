@@ -49,9 +49,11 @@
 			#verse-of-the-day-image {
 				display: block;
 				margin: 0 auto;
-				max-width: 800px;
 				padding: 40px 20px 20px;
 				width: calc(100% - 40px);
+				cursor: pointer;
+				width: 800px;
+				height: 450px;
 			}
 
 			#share-links {
@@ -59,11 +61,10 @@
 			}
 			.share-image {
 				max-width: 40px;
+				cursor: pointer;
 			}
 		</style>
 	</head>
-	<style type="text/css">
-	</style>
 	<body>
 		<div class="wrapper">
 			<div class="header">
@@ -71,14 +72,12 @@
 				<h1>Verse of the Day</h1>
 			</div>
 		</div>
-		<a href="https://bible.faithlife.com/verseoftheday/lightbox">
-			<img id="verse-of-the-day-image" />
-		</a>
+		<img id="verse-of-the-day-image" />
 		<div id="share-links">
 			<p>Share today's image with your friends!</p>
-			<a href="https://faithlife.com/share?url=https://bible.faithlife.com/verseoftheday/lightbox"><img src="faithlife.png" class="share-image" /></a>
-			<a href="https://facebook.com/share?url=https://bible.faithlife.com/verseoftheday/lightbox"><img src="fb.png" class="share-image"/></a>
-			<a href="https://twitter.com/share?url=https://bible.faithlife.com/verseoftheday/lightbox"><img src="twitter.png" class="share-image"/></a>
+			<img src="faithlife.png" id="share-faithlife-link" class="share-image" />
+			<img src="fb.png" id="share-fb-link" class="share-image"/>
+			<img src="twitter.png" id="share-twitter-link" class="share-image"/>
 		</div>
 		</p>
 		<script type="text/javascript" src="main.js"></script>
